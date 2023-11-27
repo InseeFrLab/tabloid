@@ -1,0 +1,39 @@
+Type: Package
+Package: tabloid
+Title: Creation De Tableaux Croises
+Version: 0.1.0
+Authors@R: c(
+    person("Maëlle", "Fontaine", , "maelle.fontaine@insee.fr", role = c("aut", "cre")),
+    person("Laurette", "Cretin", , "laurette.cretin@insee.fr", role = "aut"),
+    person(, "Institut National de la Statistique et des Études Économiques", role = "cph")
+  )
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Depends: 
+    R (>= 2.10)
+Imports: 
+    assertthat,
+    dplyr (>= 1.1.0),
+    forcats,
+    glue,
+    grDevices,
+    kableExtra,
+    knitr,
+    magrittr,
+    openxlsx,
+    purrr,
+    rlang,
+    stats,
+    stringr,
+    tidyr (>= 1.2.0),
+    tidyselect
+Suggests: 
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: 
+    knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3

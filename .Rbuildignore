@@ -1,0 +1,8 @@
+^tabloid\.Rproj$
+^\.Rproj\.user$
+^renv$
+^renv\.lock$
+^.*\.Rproj$
+^_pkgdown\.yml$
+^pkgdown$
+^\.gitlab-ci\.yml$

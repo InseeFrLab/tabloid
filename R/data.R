@@ -1,0 +1,17 @@
+#' Base de données sur les prénoms à la naissance en 1900 et 2020
+#'
+#' Base utilisée pour les exemples
+#'
+#' @format table de données contenant 8 variables :
+#' \describe{
+#'    \item{prenom}{prénom à la naissance}
+#'    \item{sexe}{sexe : "G" = garçon, "F" = fille}
+#'    \item{annais}{année de naissance (1900 ou 2020)}
+#'    \item{nombre}{nombre de naissance d'enfants avec ce prénom, pour l'année et le département concernés}
+#'    \item{dpt}{numéro de département}
+#'    \item{lib_dpt}{libellé de département}
+#'    \item{reg}{numéro de région}
+#'    \item{lib_reg}{libellé de région}
+#' }
+"prenoms"
+

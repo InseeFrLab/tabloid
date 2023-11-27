@@ -1,0 +1,10 @@
+testthat::test_that("calc_stat", {
+  testthat::expect_equal(calc_stat(1:10, stat = "sum"), expected = 55)
+  testthat::expect_equal(calc_stat(1:10, stat = "mean"), expected = 5.5)
+  testthat::expect_equal(calc_stat(1:10, stat = "min"), expected = 1)
+  testthat::expect_equal(calc_stat(1:10, stat = "max"), expected = 10)
+  testthat::expect_equal(calc_stat(1:10, stat = "weighted_mean", var_w = 1:10), expected = 7)
+  testthat::expect_equal(calc_stat(1:10, stat = "weighted_sum", var_w = 1:10), expected = 385)
+  testthat::expect_equal(calc_stat(c(1, 1:10), stat = "quantile", probs = 0.5), expected = 5)
+  testthat::expect_equal(calc_stat(1:10, stat = "quantile", probs = 0.7), expected = 7.3)
+})

@@ -1,0 +1,42 @@
+destination: public
+
+navbar:
+  structure:
+    left:
+      - home
+      - reference
+      - articles
+  components:
+    reference:
+      text: Contenu du package
+      href: reference/index.html
+  right:
+    - text: Code source
+      href: https://gitlab.insee.fr/espace-charges-etudes/boite-outils/tableaux
+      icon: fa-gitlab
+
+home:
+  title: Package R pour créer des tableaux croisés
+
+reference:
+  - title: Créer un tableau croisé
+    desc:  Une fonction pour créer un tableau croisé
+    contents:
+      - tab_build
+  - title: Customiser le contenu d'un tableau croisé
+    desc:  Les fonctions pour mettre en forme un tableau croisé
+    contents:
+      - tab_pct
+      - tab_round
+      - tab_mask
+  - title: Afficher ou exporter un tableau
+    desc:  pour insérer un tableau croisé dans un document rmd ou l'exporter dans un classeur xlsx
+    contents:
+      - tab_render
+      - tab_xlsx
+  - title: Données exemples
+    desc: base de données pour les exemples disponible dans ce package
+    contents:
+      - prenoms
+
+

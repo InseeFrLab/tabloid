@@ -1,0 +1,13 @@
+pandoc: 2.9.2.1
+pkgdown: 2.0.7
+pkgdown_sha: ~
+articles:
+  aa_presentation_package: aa_presentation_package.html
+  bb_creer_tableau_croise: bb_creer_tableau_croise.html
+  cc_calculer_profil_ligne_colonne: cc_calculer_profil_ligne_colonne.html
+  dd_arrondir_tableau: dd_arrondir_tableau.html
+  ee_masquer_partie_contenu_tableau: ee_masquer_partie_contenu_tableau.html
+  ff_afficher_joli_tableau_html: ff_afficher_joli_tableau_html.html
+  gg_exporter_joli_tableau_xlsx: gg_exporter_joli_tableau_xlsx.html
+last_built: 2023-11-27T18:14Z
+

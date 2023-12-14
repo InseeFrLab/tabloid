@@ -22,9 +22,20 @@ Servir à différents chargés d'études
 
 #### Installation
 
-L'instruction d'installation est la suivante :
+La procédure d'installation dépend de l'environnement dans lequel se trouve `R`
 
-```         
+1️⃣ __Accès à internet: depuis `Github`__
+
+```r
+# install.packages("remotes")
+remotes::install_github("inseefrlab/tabloid",
+                     dependencies = TRUE)
+                     
+```
+
+2️⃣ __Pas d'accès à internet (AUS, LS3...): depuis un `Gitlab` interne :
+
+```r
 # install.packages("remotes")
 remotes::install_git("https://gitlab.insee.fr/espace-charges-etudes/boite-outils/tableaux",
                      dependencies = TRUE)

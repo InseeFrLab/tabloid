@@ -123,11 +123,19 @@
 <div class="section level4">
 <h4 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h4>
-<p>L’instruction d’installation est la suivante :</p>
-<pre><code><span><span class="co"># install.packages("remotes")</span></span>
+<p>La procédure d’installation dépend de l’environnement dans lequel se trouve <code>R</code></p>
+<p>1️⃣ <strong>Accès à internet: depuis <code>Github</code></strong></p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># install.packages("remotes")</span></span>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"inseefrlab/tabloid"</span>,</span>
+<span>                     dependencies <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span>                     </span></code></pre></div>
+<p>2️⃣ __Pas d’accès à internet (AUS, LS3…): depuis un <code>Gitlab</code> interne :</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># install.packages("remotes")</span></span>
 <span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_git.html" class="external-link">install_git</a></span><span class="op">(</span><span class="st">"https://gitlab.insee.fr/espace-charges-etudes/boite-outils/tableaux"</span>,</span>
 <span>                     dependencies <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
-<span>                     </span></code></pre>
+<span>                     </span></code></pre></div>
 <p>Important : avec l’argument <code>dependencies = TRUE</code>, R va chercher s’il existe des mises à jour de packages dont dépend le package <code>tabloid</code> pour fonctionner - si c’est le cas, il demande à l’utilisateur ce qu’il doit faire (installer ou non ces mises à jour).</p>
 <p>Dans l’exemple ci-dessous, plusieurs versions de packages installées sur notre poste sont antérieures aux versions disponibles sur le CRAN. Renseigner alors l’option choisie :</p>
 <ul>
